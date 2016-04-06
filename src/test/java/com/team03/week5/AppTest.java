@@ -11,14 +11,17 @@ public class AppTest
         assertEquals("","" );
     }
    @Test
-   public void testBill()
+   public void UserSmallGold()
    {
        User user = new User();
        user.setPlanTypeName("gold");
        assertEquals("gold", user.getPlanTypeName());
    }
    @Test
-   	public void GoldTest(){
-	   
+   public void UserBigGold()
+   {
+       User user = new User();
+       user.setPlanTypeName("Gold");
+       assertEquals("Gold", user.getPlanTypeName());
    }
 }
