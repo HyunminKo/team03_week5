@@ -121,6 +121,7 @@ public class AppTest
        totalRate.calTotalRate(user, planType);
        assertEquals(77.95, totalRate.getTotalRate(),0.01);
    }
+   @Test
    public void UserSilverOverTime()
    {
 	   setUp();
