@@ -55,12 +55,48 @@ public class AppTest
        assertEquals(49.95, totalRate.getTotalRate(),0.01);
    }
    @Test
+   public void UserGoldAddLine()
+   {
+	   setUp();
+       user.setPlanTypeName("Gold");
+       user.setNumberOfLines(2);
+       user.setMinutesUsed(500);
+       assertEquals(64.45, totalRate.getTotalRate(),0.01);
+   }
+   @Test
+   public void UserGoldAddLines()
+   {
+	   setUp();
+       user.setPlanTypeName("Gold");
+       user.setNumberOfLines(4);
+       user.setMinutesUsed(500);
+       assertEquals(83.95, totalRate.getTotalRate(),0.01);
+   }
+   @Test
    public void UserSilverBill()
    {
 	   setUp();
        user.setPlanTypeName("Silver");
        user.setNumberOfLines(1);
-       user.setMinutesUsed(500);
-       assertEquals(49.95, totalRate.getTotalRate(),0.01);
+       user.setMinutesUsed(250);
+       assertEquals(29.95, totalRate.getTotalRate(),0.01);
+   }
+   @Test
+   public void UserSilverAddLine()
+   {
+	   setUp();
+       user.setPlanTypeName("Silver");
+       user.setNumberOfLines(2);
+       user.setMinutesUsed(250);
+       assertEquals(54.45, totalRate.getTotalRate(),0.01);
+   }
+   @Test
+   public void UserSilverAddLines()
+   {
+	   setUp();
+       user.setPlanTypeName("Silver");
+       user.setNumberOfLines(4);
+       user.setMinutesUsed(250);
+       assertEquals(77.95, totalRate.getTotalRate(),0.01);
    }
 }
