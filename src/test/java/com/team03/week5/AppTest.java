@@ -27,8 +27,9 @@ public class AppTest
    {
 	   setUp();
        user.setPlanTypeName("Gold");
-       assertEquals("Gold", user.getPlanTypeName());
+	assertEquals("Gold", user.getPlanTypeName());
    }
+   /*
    @Test
    public void UserGoldBill()
    {
@@ -39,4 +40,5 @@ public class AppTest
        totalRate.calTotalRate(user, planType);
        assertEquals("Gold", user.getPlanTypeName());
    }
+   */
 }
