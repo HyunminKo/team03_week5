@@ -29,12 +29,36 @@ public class AppTest
        user.setPlanTypeName("Gold");
        assertEquals("Gold", user.getPlanTypeName());
    }
+   @Test
+	public void UserSmallSilver()
+	{
+		setUp();
+		user.setPlanTypeName("silver");
+		assertEquals("silver", user.getPlanTypeName());
+	}
+  @Test
+  public void UserBigSilver()
+  {
+	   setUp();
+      user.setPlanTypeName("Silver");
+      assertEquals("Silver", user.getPlanTypeName());
+  }
+   
  
    @Test
    public void UserGoldBill()
    {
 	   setUp();
        user.setPlanTypeName("Gold");
+       user.setNumberOfLines(1);
+       user.setMinutesUsed(500);
+       assertEquals(49.95, totalRate.getTotalRate(),0.01);
+   }
+   @Test
+   public void UserSilverBill()
+   {
+	   setUp();
+       user.setPlanTypeName("Silver");
        user.setNumberOfLines(1);
        user.setMinutesUsed(500);
        assertEquals(49.95, totalRate.getTotalRate(),0.01);
