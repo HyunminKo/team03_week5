@@ -10,4 +10,14 @@ public class AppTest
     {
         assertEquals("","" );
     }
+   @Test
+   public void testBill()
+   {
+       User user = new User();
+       user.setPlanTypeName("gold");
+   }
+   @Test
+   	public void GoldTest(){
+	   
+   }
 }
