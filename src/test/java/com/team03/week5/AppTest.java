@@ -12,7 +12,7 @@ public class AppTest
     public void setUp()
     {
         user = new User();
-        planType = null;
+        planType = new Gold();
         totalRate = new TotalRate();
     }
 	@Test
@@ -36,6 +36,7 @@ public class AppTest
        user.setPlanTypeName("Gold");
        user.setNumberOfLines(1);
        user.setMinutesUsed(500);
+       totalRate.calTotalRate(user, planType);
        assertEquals("Gold", user.getPlanTypeName());
    }
 }
