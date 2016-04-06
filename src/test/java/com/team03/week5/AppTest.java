@@ -43,6 +43,13 @@ public class AppTest
 	   assertEquals("Silver", user.getPlanTypeName());
    }
    @Test
+   public void UserIncorrectlyPlanName()
+   {
+	   setUp();
+	   user.setPlanTypeName("gollld");
+       assertTrue(true);
+   }
+   @Test
    public void UserSetLine()
    {
 	   setUp();
