@@ -37,6 +37,6 @@ public class AppTest
        user.setPlanTypeName("Gold");
        user.setNumberOfLines(1);
        user.setMinutesUsed(500);
-       assertEquals(49.95, totalRate.getTotalRate());
+       assertEquals(49.95, totalRate.getTotalRate(),0.01);
    }
 }
