@@ -18,20 +18,21 @@ public class AppTest
 	@Test
 	public void UserSmallGold()
 	{
+		setUp();
 		user.setPlanTypeName("gold");
        assertEquals("gold", user.getPlanTypeName());
 	}
    @Test
    public void UserBigGold()
    {
-       User user = new User();
+	   setUp();
        user.setPlanTypeName("Gold");
        assertEquals("Gold", user.getPlanTypeName());
    }
    @Test
    public void UserGoldBill()
    {
-       User user = new User();
+	   setUp();
        user.setPlanTypeName("Gold");
        user.setNumberOfLines(1);
        user.setMinutesUsed(500);
