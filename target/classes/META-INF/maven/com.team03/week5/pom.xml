@@ -28,6 +28,11 @@
     	<version>0.7.6.201602180812</version>
     	<type>maven-plugin</type>
     </dependency>
+    <dependency>
+    	<groupId>org.jacoco</groupId>
+    	<artifactId>org.jacoco.report</artifactId>
+    	<version>0.7.6.201602180812</version>
+    </dependency>
   </dependencies>
   
   <build>
