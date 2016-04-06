@@ -20,16 +20,16 @@ public class AppTest
 	{
 		setUp();
 		user.setPlanTypeName("gold");
-       assertEquals("gold", user.getPlanTypeName());
+		assertEquals("gold", user.getPlanTypeName());
 	}
    @Test
    public void UserBigGold()
    {
 	   setUp();
        user.setPlanTypeName("Gold");
-	assertEquals("Gold", user.getPlanTypeName());
+       assertEquals("Gold", user.getPlanTypeName());
    }
-   /*
+ 
    @Test
    public void UserGoldBill()
    {
@@ -38,7 +38,6 @@ public class AppTest
        user.setNumberOfLines(1);
        user.setMinutesUsed(500);
        totalRate.calTotalRate(user, planType);
-       assertEquals("Gold", user.getPlanTypeName());
+       assertEquals(49.95, totalRate.getTotalRate());
    }
-   */
 }
