@@ -50,11 +50,25 @@ public class AppTest
        assertEquals(1, user.getNumberOfLines());
    }
    @Test
+   public void UserSetZeroLine()
+   {
+	   setUp();
+       user.setNumberOfLines(0);
+       assertTrue(true);
+   }
+   @Test
    public void UserSetUsedTime()
    {
 	   setUp();
        user.setMinutesUsed(500);;
        assertEquals(500, user.getMinutesUsed());
+   }
+   @Test
+   public void UserSetZeroUsedTime()
+   {
+	   setUp();
+       user.setMinutesUsed(0);
+       assertTrue(true);
    }
    
    @Test
