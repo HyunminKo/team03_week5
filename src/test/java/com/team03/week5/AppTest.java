@@ -15,63 +15,63 @@ public class AppTest
         totalRate = new TotalRate();
     }
 	@Test
-	public void UserSmallGold()
+	public void TestAppInputSmallGold()
 	{
 		setUp();
 		user.setPlanTypeName("gold");
 		assertEquals("gold", user.getPlanTypeName());
 	}
    @Test
-   public void UserBigGold()
+   public void TestAppInputBigGold()
    {
 	   setUp();
        user.setPlanTypeName("Gold");
        assertEquals("Gold", user.getPlanTypeName());
    }
    @Test
-	public void UserSmallSilver()
+	public void TestAppInputSmallSilver()
 	{
 		setUp();
 		user.setPlanTypeName("silver");
 		assertEquals("silver", user.getPlanTypeName());
 	}
    @Test
-   public void UserBigSilver()
+   public void TestAppInputBigSilver()
    {
 	   setUp();
 	   user.setPlanTypeName("Silver");
 	   assertEquals("Silver", user.getPlanTypeName());
    }
    @Test
-   public void UserIncorrectlyPlanName()
+   public void TestAppInputIncorrectlyPlanName()
    {
 	   setUp();
 	   user.setPlanTypeName("gollld");
        assertTrue(true);
    }
    @Test
-   public void UserSetLine()
+   public void TestAppInputLine()
    {
 	   setUp();
        user.setNumberOfLines(1);
        assertEquals(1, user.getNumberOfLines());
    }
    @Test
-   public void UserSetZeroLine()
+   public void TestAppInputZeroLine()
    {
 	   setUp();
        user.setNumberOfLines(0);
        assertTrue(true);
    }
    @Test
-   public void UserSetUsedTime()
+   public void TestAppInputUsedTime()
    {
 	   setUp();
-       user.setMinutesUsed(500);;
+       user.setMinutesUsed(500);
        assertEquals(500, user.getMinutesUsed());
    }
    @Test
-   public void UserSetZeroUsedTime()
+   public void TestAppInputZeroUsedTime()
    {
 	   setUp();
        user.setMinutesUsed(0);
