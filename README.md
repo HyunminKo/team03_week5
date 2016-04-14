@@ -34,7 +34,7 @@
   git clone 명령어나 download .zip을 이용해 로컬 저장소로 프로젝트를 다운 받습니다.
   ![Result0](./img/1.png)
   
-###2. go to the target folder
+###2. Go to the target folder
   ![Result1](./img/2.png)
 
 ###3. Excute
