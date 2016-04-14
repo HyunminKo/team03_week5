@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.team03.week5.AppTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 sec
+=======
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 sec
+>>>>>>> 6021cd2c05bcd6dbce5d5da0a4b2d05dba00976f
