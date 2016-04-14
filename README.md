@@ -37,7 +37,7 @@
 ###2. go to the target folder
   ![Result1](./img/2.png)
 
-###4. Excute
+###3. Excute
 	command prompt : java -jar week5-0.0.1-SNAPSHOT.jar [Plantype] [Numberofline] [Minutesused]
       - Plantype : gold | silver (Ignorecase)
       - Numberofline : Positive Integer
